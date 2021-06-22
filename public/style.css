@@ -4,6 +4,7 @@
     :root {
         --text-primary: #000000;
         --text-secondary: #3B3B3B;
+        --text-tertiary: #8e9297;
         --background: #ffffff;
         --background2: #EBEDEF;
         --navColor: #FAFAFA;
@@ -20,6 +21,7 @@
     :root {
         --text-primary: #ffffff;
         --text-secondary: #9e9e9e;
+        --text-tertiary: #8e9297;
         --background: #36393f;
         --background2: #2f3136;
         --navColor: #363636;
@@ -63,9 +65,9 @@ button:active, a.btn:active {
     background-color: var(--darkest-blurple) !important;
 }
 
-/* This doesnt seem to be used so I didn't worry about it -Sei */
+
 label {
-    color: #8e9297;
+    color: var(--text-tertiary);
 }
 
 textarea {
