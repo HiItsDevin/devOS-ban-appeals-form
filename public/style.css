@@ -110,7 +110,7 @@ textarea:focus {
 }
 
 #username {
-    color: white;
+    color: var(--text-secondary) !important;
 }
 
 
