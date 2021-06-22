@@ -1,7 +1,9 @@
+@import url('./fonts/fonts.css');
+
 body {
     background: #36393f;
 
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .jumbotron {
