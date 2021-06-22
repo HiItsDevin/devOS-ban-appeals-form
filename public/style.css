@@ -1,23 +1,54 @@
 @import url('./fonts/fonts.css');
 
+@media (prefers-color-scheme: light) {
+    :root {
+        --text-primary: #000000;
+        --text-secondary: #3B3B3B;
+        --background: #ffffff;
+        --background2: #EBEDEF;
+        --navColor: #FAFAFA;
+        --accentColor: #00a86b;
+        --blurple: #7289da;
+        --darker-blurple: #677bc4;
+        --darkest-blurple: #5b6eae;
+        --background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.3)), url("../images/banner.png");
+        background-blend-mode: overlay;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-primary: #ffffff;
+        --text-secondary: #9e9e9e;
+        --background: #36393f;
+        --background2: #2f3136;
+        --navColor: #363636;
+        --accentColor: #00a86b;
+        --blurple: #7289da;
+        --darker-blurple: #677bc4;
+        --darkest-blurple: #5b6eae;
+        --background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.3)), url("../images/banner.png");
+    }
+}
+
 body {
-    background: #36393f;
+    background: var(--background);
 
     font-family: "Poppins", sans-serif;
 }
 
 .jumbotron {
-    background: #2f3136;
+    background: var(--background2);
 }
 
 h1 {
-    color: white;
+    color: var(--text-primary);
     font-family: "Renogare", sans-serif;
 }
 
 button, a.btn {
     color: white !important;
-    background-color: #7289da !important;
+    background-color: var(--blurple) !important;
     border: none !important;
     box-shadow: none !important;
 
@@ -25,13 +56,14 @@ button, a.btn {
 }
 
 button:hover, a.btn:hover {
-    background-color: #677bc4 !important;
+    background-color: var(--darker-blurple) !important;
 }
 
 button:active, a.btn:active {
-    background-color: #5b6eae !important;
+    background-color: var(--darkest-blurple) !important;
 }
 
+/* This doesnt seem to be used so I didn't worry about it -Sei */
 label {
     color: #8e9297;
 }
@@ -79,4 +111,17 @@ textarea:focus {
 
 #username {
     color: white;
+}
+
+
+a {
+    color: var(--text-primary) !important;
+}
+    
+a:hover {
+    color: var(--text-primary) !important;
+}
+    
+a:active {
+    color: var(--text-primary) !important;
 }
